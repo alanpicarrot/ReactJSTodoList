@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery 相關練習</title>
+  </head>
+  <body>
+    <h1>這是標題</h1>
+    <h1 id="my_title">這是我的標題</h1>
+    <p>這是段落1</p>
+    <p class="para para2">這是段落2</p>
+    <p class="para para3">段是段落3</p>
+
+    <script src="./vendors/jquery/jquery-3.7.1.min.js"></script>
+    <script>
+      // 程式碼在這輸入...
+      $("h1").css("color", "red");
+      $("p").css("color", "red");
+      $("h1#my_title").css("color", "red");
+      $(".para").css("color", "red");
+      $(".para2").css("color", "red");
+      $("p.para3").css("color", "red");
+    </script>
+  </body>
+</html>

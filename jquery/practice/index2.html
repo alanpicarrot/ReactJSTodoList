@@ -8,26 +8,40 @@
     <p class="test">這是段落</p>
     <script src="./vendors/jquery/jquery-3.7.1.min.js"></script>
     <script>
-      function add(data) {
-        console.log(data);
-
-        let car = {
-          price: 100,
-          color: "white",
-          drive: function () {
-            console.log("drive");
-          },
-        };
-
-        return car;
-      }
-
-      $("p").css("color", "red");// 元素.style.color = "red";
-
+      // function add(data) {
+      //   console.log(data);
+      //   let car = {
+      //     price: 100,
+      //     color: "white",
+      //     drive: function () {
+      //       console.log("drive");
+      //     },
+      //   };
+      //   return car;
+      // }
+      //$("p").css("fontStyle", "italic");//小寫駝峰式
+      //元素.style.fontStyle = "italic";
+      //元素.style["font-style"] = "italic";
+      //$("p").css("color", "red");// 元素.style.color = "red";
       // console.log(add("p").color);
       // add("p").drive("class");
       // console.log($("p").html); //元素innerHTML
       // console.log($("p").attr("class")); //元素.getAttribute("class")
+      // $("p").attr("class", "myclass"); //元素.setAttribute("class", myclass);
+
+      // $("p").html("<span>這是 span 標籤的內容。</span>");
+      // //元素.innerHTML = "<span>這是 span 標籤的內容。</span>";
+
+      // $("p").text("<span>這是 span 標籤的內容。</span>");
+      //元素.innerText = "<span>這是 span 標籤的內容。</span>";
+
+      // $("p").remove();
+      //元素.remove();
+
+      // $("p").before("<span>這是 span 標籤的內容。</span>");
+
+      //元素.insertAdjacentHTML("beforeend", "<span>..</span>");
+                  //beforebegin, afterbegin, afterend
     </script>
   </body>
 </html>

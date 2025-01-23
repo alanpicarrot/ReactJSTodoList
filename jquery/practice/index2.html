@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery 相關練習</title>
+  </head>
+  <body>
+    <p class="test">這是段落</p>
+    <script src="./vendors/jquery/jquery-3.7.1.min.js"></script>
+    <script>
+      function add(data) {
+        console.log(data);
+
+        let car = {
+          price: 100,
+          color: "white",
+          drive: function () {
+            console.log("drive");
+          },
+        };
+
+        return car;
+      }
+
+      $("p").css("color", "red");// 元素.style.color = "red";
+
+      // console.log(add("p").color);
+      // add("p").drive("class");
+      // console.log($("p").html); //元素innerHTML
+      // console.log($("p").attr("class")); //元素.getAttribute("class")
+    </script>
+  </body>
+</html>

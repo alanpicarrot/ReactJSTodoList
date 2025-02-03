@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>class_circle</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div.block {
+        border: 2px solid red;
+        /* font-size: 0;//文字大小0，適合用在紅框無文案。 */
+        width: 200px;
+        height: 200px;
+        /* border-radius: 20px; */
+
+        /* overflow: visible; */
+        overflow: hidden;
+
+        transition: border-radius 1s;
+      }
+      div.block.-circle {
+        border-radius: 50%; /*圓形*/
+      }
+      div.block img {
+        vertical-align: bottom;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Class Circle</h1>
+    <div class="block">
+      <img src="https://picsum.photos/id/405/300/300" />xyz
+    </div>
+    <script src="./vendors/jquery/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("div.block").on("click", function () {
+          //   console.log(this);
+          //   $(this).addClass("-circle");
+          if ($(this).hasClass("-circle")) {
+            $(this).removeClass("-circle");
+          } else {
+            $(this).addClass("-circle");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

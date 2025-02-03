@@ -11,18 +11,40 @@
     <p class="para para2">這是段落2</p>
     <p class="para para3">段是段落3</p>
 
+    <hr />
+    <p class="para para4">段是段落4</p>
+
+    <div>
+      <a href="#" target="_blank">這是連結</a>
+      <p>div 裡的段落</p>
+      <section>
+        <p>div 裡更內層的段落</p>
+      </section>
+      <p>div 裡的段落</p>
+    </div>
+
+    <p>其它段落1</p>
+    <p>其它段落2</p>
+
     <script src="./vendors/jquery/jquery-3.7.1.min.js"></script>
     <script>
       // 程式碼在這輸入...
-      //   $("h1").css("color", "red");
-      //   $("p").css("color", "red");
-      //   $("h1#my_title").css("color", "red");
-      //   $(".para").css("color", "red");
-      //   $(".para2").css("color", "red");
-      //   $("p.para3").css("color", "red");
-      //   $("[id='my_title']").css("color", "red");
-      //   $("h1[id='my_title']").css("color", "red");
-      $("h1[id^='my_']").css("color", "red");
+      // $("h1").css("color", "red");
+      // $("p").css("color", "red");
+      // $("h1#my_title").css("color", "red");
+      // $(".para").css("color", "red");
+      // $(".para2").css("color", "red");
+      // $("p.para3").css("color", "red");
+      // $("[id='my_title']").css("color", "red");
+      // $("h1[id='my_title']").css("color", "red");
+      // $("h1[id^='my_']").css("color", "red");
+      // $("*").css("color", "red");
+      // $("h1, p").css("color", "red");
+      // $("p + p").css("color", "red");
+      // $("p:first-child").css("color", "red");
+      // $("p:last-child").css("color", "red");
+      // $("p:only-child").css("color", "red");
+      $("p:nth-child(3)").css("color", "red");
     </script>
   </body>
 </html>
